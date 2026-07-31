@@ -1,0 +1,20 @@
+[general]
+name=Spatial Aggregation Mean
+description=Batch-aggregates monthly gridded climate CSV files to district means, with nearest-grid fallback for districts containing no grid points.
+version=1.3.2
+qgisMinimumVersion=3.22
+qgisMaximumVersion=4.99
+author=Mr. Akmaul Hoque; Dr. Manish Kumar Naskar; Dr. Debasish Chakraborty; Dr. Koushik Bag
+email=akmaulhoque41@gmail.com
+about=Developed by Mr. Akmaul Hoque, Dr. Manish Kumar Naskar, Dr. Debasish Chakraborty and Dr. Koushik Bag, Water Management Section, Division of System Research and Engineering (DSRE), ICAR Research Complex for NEH Region. This portable QGIS Processing plugin converts longitude-latitude climate grids in CSV format into polygon-wise monthly means, detects coordinate and month columns, performs point-in-polygon aggregation, and fills polygons without internal grid points using the mean of the nearest grid points.
+tracker=https://github.com/AkmaulHoque/akmaulhoque41/issues
+repository=https://github.com/AkmaulHoque/akmaulhoque41
+homepage=https://github.com/AkmaulHoque/akmaulhoque41#readme
+category=Vector
+tags=climate,csv,district,aggregation,batch,nearest neighbour,temperature,rainfall
+icon=icon.svg
+hasProcessingProvider=yes
+experimental=False
+deprecated=False
+license=GPL-2.0-or-later
+changelog=1.3.2 - Confirmed QGIS 4 listing compatibility through qgisMaximumVersion=4.99; removed obsolete Qt 6 metadata-flag references from documentation.\n1.3.1 - Updated the author list: added Dr. Koushik Bag and corrected Dr. Debasish Chakraborty spelling.\n1.3.0 - Added QGIS 4.2 and Qt 6 compatibility while retaining QGIS 3.22+ support; updated Processing enums and QAction imports; confirmed deprecated=False.\n1.2.2 - Updated author order, institutional affiliation and contact email for QGIS repository submission.\n1.2.1 - Changed the Processing algorithm/dialog window title to Spatial Aggregation Mean.\n1.2.0 - Renamed the plugin to Spatial Aggregation Mean throughout QGIS menus, Processing Toolbox and documentation.\n1.1.0 - Added a bundled step-by-step HTML and Word user manual accessible from the QGIS Vector menu.\n1.0.0 - Initial release with batch CSV processing, automatic column detection, district means and nearest-grid fallback.
